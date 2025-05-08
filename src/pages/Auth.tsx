@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
-import { toast } from "@/components/ui/sonner";
+import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -36,9 +36,8 @@ const Auth = () => {
       if (isSignUp) {
         const { error } = await signUp(values.email, values.password);
         if (error) throw error;
-        toast({
-          title: "Account created successfully",
-          description: "Please check your email for verification instructions.",
+        toast.success("Account created successfully", {
+          description: "Please check your email for verification instructions."
         });
       } else {
         const { error } = await signIn(values.email, values.password);
@@ -46,10 +45,8 @@ const Auth = () => {
         navigate("/");
       }
     } catch (error: any) {
-      toast({
-        title: "Authentication error",
-        description: error.message || "An unexpected error occurred",
-        variant: "destructive",
+      toast.error("Authentication error", {
+        description: error.message || "An unexpected error occurred"
       });
     }
   };
