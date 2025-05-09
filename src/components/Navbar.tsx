@@ -61,9 +61,6 @@ const Navbar = () => {
           <a href="#how-it-works" className="text-gray-700 hover:text-brand-purple transition-colors">
             How It Works
           </a>
-          <a href="#testimonials" className="text-gray-700 hover:text-brand-purple transition-colors">
-            Testimonials
-          </a>
           
           {user ? (
             <div className="flex items-center space-x-4">
@@ -120,13 +117,6 @@ const Navbar = () => {
             onClick={() => setMobileMenuOpen(false)}
           >
             How It Works
-          </a>
-          <a 
-            href="#testimonials" 
-            className="text-gray-700 hover:text-brand-purple transition-colors"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            Testimonials
           </a>
           
           {user ? (
