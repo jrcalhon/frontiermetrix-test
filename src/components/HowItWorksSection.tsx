@@ -76,9 +76,11 @@ const HowItWorksSection = () => {
               </ul>
             </div>
             
-            <Button className="bg-brand-purple hover:bg-brand-purple/90">
-              Request Early Access
-            </Button>
+            <div className="flex justify-center">
+              <Button className="bg-brand-purple hover:bg-brand-purple/90">
+                Request Early Access
+              </Button>
+            </div>
           </div>
         </div>
       </div>
