@@ -2,36 +2,54 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
+import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
 
 const CtaSection = () => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (!email.trim()) {
-      toast({
-        title: "Error",
-        description: "Please enter a valid email address.",
-        variant: "destructive",
-      });
+    if (!email.trim() || !isValidEmail(email)) {
+      toast.error("Please enter a valid email address.");
       return;
     }
     
     setIsSubmitting(true);
     
-    // Simulate API call
-    setTimeout(() => {
-      toast({
-        title: "Success!",
-        description: "You've been added to our waitlist.",
-      });
-      setEmail("");
+    try {
+      // Insert the email into the waitlist table
+      const { error } = await supabase
+        .from('waitlist')
+        .insert([{ email: email.trim() }]);
+      
+      if (error) {
+        // Handle case where email might already exist
+        if (error.code === '23505') {
+          toast.info("You're already on our waitlist! We'll be in touch soon.");
+        } else {
+          console.error('Error adding to waitlist:', error);
+          toast.error("Something went wrong. Please try again later.");
+        }
+      } else {
+        toast.success("Success!", {
+          description: "You've been added to our waitlist.",
+        });
+        setEmail("");
+      }
+    } catch (err) {
+      console.error('Error submitting to waitlist:', err);
+      toast.error("Something went wrong. Please try again later.");
+    } finally {
       setIsSubmitting(false);
-    }, 1500);
+    }
+  };
+
+  // Simple email validation
+  const isValidEmail = (email: string) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   };
 
   return (
