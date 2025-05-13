@@ -50,10 +50,11 @@ const HeroSection = () => {
           <div className="w-full md:w-1/2 reveal">
             <div className="relative">
               <img
-                src="/lovable-uploads/0db4ab98-1398-483c-bb37-b99fc938d7aa.png"
+                src="/lovable-uploads/c97f8ead-5bcb-48f9-b271-22274bf25dd2.png"
                 alt="FrontierMetrix Investment Intelligence Logo"
                 className="relative z-10 rounded-lg object-contain w-full max-w-md mx-auto"
               />
+            </div>
           </div>
         </div>
       </div>
