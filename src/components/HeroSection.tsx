@@ -11,26 +11,21 @@ const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col md:flex-row items-center justify-between space-y-12 md:space-y-0">
+        <div className="flex flex-col md:flex-row items-center space-y-12 md:space-y-0">
           {/* Left column: Text content */}
           <div className="w-full md:w-1/2 space-y-6 reveal">
             <p className="inline-block bg-brand-purple/10 text-brand-purple px-4 py-1 rounded-full font-medium text-sm">
               Coming Soon
             </p>
-            <div className="space-y-2">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-brand-blue leading-none">
-                Investment<br />
-                Intelligence
-              </h1>
-              <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-brand-purple leading-none">
-                Redefined
-              </h2>
-            </div>
-            <p className="text-lg text-gray-600 max-w-lg">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-blue leading-tight">
+              Investment Intelligence 
+              <span className="text-brand-purple"> Redefined</span>
+            </h1>
+            <p className="text-lg md:text-xl text-gray-600 md:pr-12 max-w-2xl">
               FrontierMetrix helps investors make better decisions with cutting-edge analytics and real-time market intelligence
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <Button size="lg" className="bg-brand-blue hover:bg-brand-blue/90 text-white">
                 Explore Features
               </Button>
@@ -39,7 +34,7 @@ const HeroSection = () => {
               </Button>
             </div>
             
-            <div className="flex items-center space-x-4 pt-6">
+            <div className="flex items-center space-x-4 pt-4">
               <div className="flex -space-x-3">
                 <div className="w-10 h-10 rounded-full bg-gray-300 border-2 border-white flex items-center justify-center text-xs font-medium">JD</div>
                 <div className="w-10 h-10 rounded-full bg-gray-300 border-2 border-white flex items-center justify-center text-xs font-medium">TS</div>
@@ -52,7 +47,7 @@ const HeroSection = () => {
           </div>
           
           {/* Right column: Logo Image */}
-          <div className="w-full md:w-1/2 reveal flex justify-center md:justify-end">
+          <div className="w-full md:w-1/2 reveal">
             <div className="relative">
               <img
                 src="/lovable-uploads/c97f8ead-5bcb-48f9-b271-22274bf25dd2.png"
