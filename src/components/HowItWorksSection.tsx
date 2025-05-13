@@ -7,17 +7,17 @@ const HowItWorksSection = () => {
     {
       number: "01",
       title: "Register for Access",
-      description: "Join our exclusive waitlist to be among the first to experience FrontierMetrix's powerful investment tools."
+      description: "Join our exclusive waitlist to be among the first to experience FrontierMetrix's powerful investment intelligence tools"
     },
     {
       number: "02",
       title: "Customize Your Dashboard",
-      description: "Tailor your experience with personalized metrics, watchlists, and alerts that matter to you."
+      description: "Tailor your experience with personalized metrics, watchlists, and alerts that matter to you"
     },
     {
       number: "03",
       title: "Generate Insights",
-      description: "Leverage our AI-powered analytics to identify opportunities and optimize your investment strategy."
+      description: "Leverage our AI-powered analytics to identify opportunities and optimize your investment strategy"
     }
   ];
 

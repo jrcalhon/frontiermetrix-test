@@ -28,20 +28,20 @@ const CtaSection = () => {
       if (error) {
         // Handle case where email might already exist
         if (error.code === '23505') {
-          toast.info("You're already on our waitlist! We'll be in touch soon.");
+          toast.info("You're already on our waitlist! We'll be in touch soon");
         } else {
           console.error('Error adding to waitlist:', error);
-          toast.error("Something went wrong. Please try again later.");
+          toast.error("Something went wrong. Please try again later");
         }
       } else {
         toast.success("Success!", {
-          description: "You've been added to our waitlist.",
+          description: "You've been added to our waitlist",
         });
         setEmail("");
       }
     } catch (err) {
       console.error('Error submitting to waitlist:', err);
-      toast.error("Something went wrong. Please try again later.");
+      toast.error("Something went wrong. Please try again later");
     } finally {
       setIsSubmitting(false);
     }
@@ -61,7 +61,7 @@ const CtaSection = () => {
           </h2>
           
           <p className="text-lg text-white/80 mb-8">
-            Be among the first to access FrontierMetrix when we launch. Join our waitlist today.
+            Be among the first to access FrontierMetrix when we launch. Join our waitlist today
           </p>
           
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
@@ -83,7 +83,7 @@ const CtaSection = () => {
           </form>
           
           <p className="text-sm text-white/60">
-            Join 500+ investors already on our waitlist. No spam, just updates about our launch.
+            Join 500+ investors already on our waitlist. No spam, just updates about our launch
           </p>
         </div>
       </div>

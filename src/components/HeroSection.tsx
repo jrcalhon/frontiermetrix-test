@@ -22,7 +22,7 @@ const HeroSection = () => {
               <span className="text-brand-purple"> Redefined</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-600 md:pr-12 max-w-2xl">
-              FrontierMetrix helps investors make better decisions with cutting-edge analytics and real-time market intelligence.
+              FrontierMetrix helps investors make better decisions with cutting-edge analytics and real-time market intelligence
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-2">

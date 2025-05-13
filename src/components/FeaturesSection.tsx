@@ -22,22 +22,22 @@ const FeaturesSection = () => {
     {
       icon: BarChart,
       title: "Advanced Analytics",
-      description: "Access sophisticated analytical tools designed for professional investors, with customizable dashboards and real-time metrics."
+      description: "Access sophisticated analytical tools designed for professional investors, with customizable dashboards and real-time metrics"
     },
     {
       icon: Search,
       title: "Market Insights",
-      description: "Discover unique investment opportunities with our proprietary screening algorithms and comprehensive market research."
+      description: "Discover unique investment opportunities with our proprietary screening algorithms and comprehensive market research"
     },
     {
       icon: Globe,
       title: "Global Coverage",
-      description: "Monitor markets across the globe with data coverage spanning multiple asset classes, regions, and exchanges."
+      description: "Monitor markets across the globe with data coverage spanning multiple asset classes, regions, and exchanges"
     },
     {
       icon: Star,
       title: "AI Recommendations",
-      description: "Receive personalized investment recommendations powered by machine learning and predictive analytics."
+      description: "Receive personalized investment recommendations powered by machine learning and predictive analytics"
     }
   ];
 
@@ -49,7 +49,7 @@ const FeaturesSection = () => {
             Powerful Features for Intelligent Investing
           </h2>
           <p className="text-lg text-gray-600">
-            FrontierMetrix combines cutting-edge technology with financial expertise to give you a competitive edge.
+            FrontierMetrix combines cutting-edge technology with financial expertise to give you a competitive edge
           </p>
         </div>
 
