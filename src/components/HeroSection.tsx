@@ -46,14 +46,14 @@ const HeroSection = () => {
             </div>
           </div>
           
-          {/* Right column: Image */}
+          {/* Right column: Logo Image */}
           <div className="w-full md:w-1/2 reveal">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-tr from-brand-purple/30 to-transparent rounded-lg transform rotate-3"></div>
+              <div className="absolute inset-0 bg-gradient-to-tr from-brand-purple/10 to-transparent rounded-lg transform rotate-3"></div>
               <img
-                src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80"
-                alt="Investment dashboard visualization"
-                className="relative z-10 rounded-lg shadow-xl object-cover w-full max-w-md mx-auto"
+                src="/lovable-uploads/0db4ab98-1398-483c-bb37-b99fc938d7aa.png"
+                alt="FrontierMetrix Investment Intelligence Logo"
+                className="relative z-10 rounded-lg object-contain w-full max-w-md mx-auto"
               />
             </div>
           </div>
