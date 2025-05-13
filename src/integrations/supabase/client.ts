@@ -15,7 +15,6 @@ export const supabase = createClient<Database>(SUPABASE_URL, SUPABASE_PUBLISHABL
     persistSession: true,
     autoRefreshToken: true,
     flowType: 'pkce', // This is important for secure authentication flow
-    // The redirectTo option will ensure email confirmation links point to your app domain
-    redirectTo: window.location.origin,
+    // The redirectTo option is moved to the correct method calls
   }
 });

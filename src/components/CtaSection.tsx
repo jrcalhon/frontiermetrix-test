@@ -20,10 +20,10 @@ const CtaSection = () => {
     setIsSubmitting(true);
     
     try {
-      // Insert the email into the waitlist table - fixed to use proper single object format
+      // Insert the email into the waitlist table - use array format as required by TypeScript
       const { error } = await supabase
         .from('waitlist')
-        .insert({ email: email.trim() });
+        .insert([{ email: email.trim() }]);
       
       if (error) {
         // Handle case where email might already exist
