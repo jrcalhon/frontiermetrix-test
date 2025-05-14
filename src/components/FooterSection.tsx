@@ -1,5 +1,5 @@
 
-import { Heart } from "lucide-react";
+import { MessageCircleHeart } from "lucide-react";
 
 const FooterSection = () => {
   const currentYear = new Date().getFullYear();
@@ -72,7 +72,7 @@ const FooterSection = () => {
             © {currentYear} FrontierMetrix. All rights reserved.
           </p>
           <p className="text-gray-500 text-sm flex items-center">
-            Made with <Heart className="h-4 w-4 text-brand-purple mx-1" /> for modern investors
+            Made with <MessageCircleHeart className="h-4 w-4 text-brand-purple mx-1" /> for modern investors
           </p>
         </div>
       </div>
