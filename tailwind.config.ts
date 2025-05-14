@@ -65,8 +65,8 @@ export default {
 				},
 				brand: {
 					blue: '#102A43',
-					purple: '#9b87f5',
-					lightPurple: '#D6BCFA',
+					accent: '#33C3F0',    // Changed from purple to blue accent
+					lightAccent: '#B8E1F5', // Changed from lightPurple to lightAccent
 					gray: '#F1F1F1',
 					darkGray: '#333333'
 				}

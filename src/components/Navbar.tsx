@@ -49,23 +49,23 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center">
           <Link to="/" className="text-2xl font-bold text-brand-blue">
-            Frontier<span className="text-brand-purple">Metrix</span>
+            Frontier<span className="text-brand-accent">Metrix</span>
           </Link>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#features" className="text-gray-700 hover:text-brand-purple transition-colors">
+          <a href="#features" className="text-gray-700 hover:text-brand-accent transition-colors">
             Features
           </a>
-          <a href="#how-it-works" className="text-gray-700 hover:text-brand-purple transition-colors">
+          <a href="#how-it-works" className="text-gray-700 hover:text-brand-accent transition-colors">
             How It Works
           </a>
           
           {user ? (
             <div className="flex items-center space-x-4">
-              <Avatar className="h-8 w-8 border border-brand-purple">
-                <AvatarFallback className="bg-brand-purple text-white">
+              <Avatar className="h-8 w-8 border border-brand-accent">
+                <AvatarFallback className="bg-brand-accent text-white">
                   {getUserInitials()}
                 </AvatarFallback>
               </Avatar>
@@ -80,7 +80,7 @@ const Navbar = () => {
             </div>
           ) : (
             <Button 
-              className="bg-brand-purple hover:bg-brand-purple/90" 
+              className="bg-brand-accent hover:bg-brand-accent/90" 
               onClick={handleAuthClick}
             >
               Login
@@ -106,14 +106,14 @@ const Navbar = () => {
         <nav className="md:hidden bg-white shadow-lg py-4 px-6 absolute top-full left-0 right-0 flex flex-col space-y-4">
           <a 
             href="#features" 
-            className="text-gray-700 hover:text-brand-purple transition-colors"
+            className="text-gray-700 hover:text-brand-accent transition-colors"
             onClick={() => setMobileMenuOpen(false)}
           >
             Features
           </a>
           <a 
             href="#how-it-works" 
-            className="text-gray-700 hover:text-brand-purple transition-colors"
+            className="text-gray-700 hover:text-brand-accent transition-colors"
             onClick={() => setMobileMenuOpen(false)}
           >
             How It Works
@@ -122,8 +122,8 @@ const Navbar = () => {
           {user ? (
             <div className="flex flex-col space-y-4">
               <div className="flex items-center">
-                <Avatar className="h-8 w-8 border border-brand-purple mr-2">
-                  <AvatarFallback className="bg-brand-purple text-white">
+                <Avatar className="h-8 w-8 border border-brand-accent mr-2">
+                  <AvatarFallback className="bg-brand-accent text-white">
                     {getUserInitials()}
                   </AvatarFallback>
                 </Avatar>
@@ -139,7 +139,7 @@ const Navbar = () => {
             </div>
           ) : (
             <Button 
-              className="bg-brand-purple hover:bg-brand-purple/90 w-full" 
+              className="bg-brand-accent hover:bg-brand-accent/90 w-full" 
               onClick={() => {
                 setMobileMenuOpen(false);
                 handleAuthClick();

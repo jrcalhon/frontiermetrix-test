@@ -75,7 +75,7 @@ const CtaSection = () => {
             />
             <Button 
               type="submit" 
-              className="bg-brand-purple hover:bg-brand-purple/90 text-white"
+              className="bg-brand-accent hover:bg-brand-accent/90 text-white"
               disabled={isSubmitting}
             >
               {isSubmitting ? "Joining..." : "Join Waitlist"}

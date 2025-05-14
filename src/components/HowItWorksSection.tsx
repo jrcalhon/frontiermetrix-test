@@ -53,7 +53,7 @@ const HowItWorksSection = () => {
             <div className="space-y-8 mb-8">
               {steps.map((step, index) => (
                 <div key={index} className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-brand-purple/10 rounded-full flex items-center justify-center text-brand-purple font-bold">
+                  <div className="flex-shrink-0 w-12 h-12 bg-brand-accent/10 rounded-full flex items-center justify-center text-brand-accent font-bold">
                     {step.number}
                   </div>
                   <div>
@@ -69,7 +69,7 @@ const HowItWorksSection = () => {
               <ul className="space-y-3">
                 {benefits.map((benefit, index) => (
                   <li key={index} className="flex items-start">
-                    <Check className="h-5 w-5 text-brand-purple mr-2 mt-0.5 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-brand-accent mr-2 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700">{benefit}</span>
                   </li>
                 ))}
@@ -77,7 +77,7 @@ const HowItWorksSection = () => {
             </div>
             
             <div className="flex justify-center">
-              <Button className="bg-brand-purple hover:bg-brand-purple/90">
+              <Button className="bg-brand-accent hover:bg-brand-accent/90">
                 Request Early Access
               </Button>
             </div>

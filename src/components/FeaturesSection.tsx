@@ -8,8 +8,8 @@ const FeatureCard = ({ icon: Icon, title, description }: {
 }) => {
   return (
     <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300 reveal">
-      <div className="mb-4 p-3 inline-block bg-brand-purple/10 rounded-lg">
-        <Icon className="h-6 w-6 text-brand-purple" />
+      <div className="mb-4 p-3 inline-block bg-brand-accent/10 rounded-lg">
+        <Icon className="h-6 w-6 text-brand-accent" />
       </div>
       <h3 className="text-xl font-semibold mb-2 text-brand-blue">{title}</h3>
       <p className="text-gray-600">{description}</p>
